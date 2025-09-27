@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeepTunes - Your favourite music is here</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li class="brand">
+  <img src="logo.png" alt="BabuBeats Logo" width="64">
+  DeepTunes
+</li>
+
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="songList">
+      <h1>Best of Bollywood Song</h1>
+      <div class="songItemContainer">
+        <!-- Songs will be populated by JavaScript -->
+      </div>
+    </div>
+    <div class="songBanner">
+      <div class="banner-content">
+        <h2>🎵 Enjoy Your Music 🎵</h2>
+        <p>Best collection of Hindi songs</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Player -->
+  <div class="bottom">
+    <!-- Progress Bar -->
+    <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+
+    <!-- Controls and Volume -->
+    <div class="controls">
+      <div class="volume">
+        <i class="fas fa-volume-up" id="volumeIcon"></i>
+        <input type="range" id="volumeBar" min="0" max="100" value="80">
+      </div>
+      
+      <div class="icons">
+        <i class="fas fa-step-backward" id="previous"></i>
+        <i class="far fa-play-circle" id="masterPlay"></i>
+        <i class="fas fa-step-forward" id="next"></i>
+      </div>
+
+      <!-- Song Info -->
+      <div class="songInfo">
+        <img src="https://via.placeholder.com/42x42/1db954/ffffff?text=♪" width="42px" alt="song cover" id="currentSongCover">
+        <img src="playing.gif" width="42px" alt="playing gif" id="gif">
+        <span id="masterSongName">Select a song to play</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
